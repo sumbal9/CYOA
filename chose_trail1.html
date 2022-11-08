@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title> Epic Adventure</title>
+</head>
+<body>
+
+    <div id="scene">
+
+        <a href="chose_siginal.html">
+
+            <img src="bar1.png" id="Bar1">
+
+             </a> 
+
+        <a href="chose_keepgoing.html">
+
+            <img src="keepgoing.png" id="keepgoing">
+
+        </a>
+
+        <p id="situation"> FINALLY you have got a signal, now the choice is up to you would you like to go to the <a href="chose_siginal.html">signal side </a> or <a href="chose_keepgoing.html">keep Going ?</a></p>
+
+    </div>
+
+    <style>
+
+        body {
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            font-family: Papyrus;
+            font-size: 80px;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+
+            position: absolute;
+            top:20px
+            left: 80px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #scene {
+            background: url("trail1.png") no-repeat;
+            height: 400px;
+            width: 711px;
+
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        #situation {
+            position: absolute;
+            top: 310px;
+            left: 20px;
+            padding: 15px 15px 15px 15px;
+
+            background-color: rgba(0, 0, 0, .5);
+            width: 640px;
+            text-align: center;
+        }
+
+         #keepgoing {
+
+            position: absolute;
+
+            left: 500px;
+            top: 20px;
+
+            width: 190px;
+            height: 300px;
+
+            opacity: 0;
+        }
+
+        #Keepgoing:hover {
+            background-color: rgba(256, 256, 256, .5);
+            opacity: 1;
+        }
+
+        #Bar1 {
+            position: absolute;
+
+            left: 500px;
+            top: 20px;
+
+            width: 190px;
+            height: 300px;
+
+            opacity: 0;
+        }
+
+        #bar1:hover {
+            background-color: rgba(256, 256, 256, .5);
+            opacity: 1;
+        }
+
+    </style>
+</body>
+</html>
