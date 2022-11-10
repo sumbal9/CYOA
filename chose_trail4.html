@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <title> Epic Adventure</title>
+</head>
+<body>
+    <div class="moped-bear-container">
+        <div class="moped-bear">
+
+            <div class="bear">
+                <div class="bear-head">
+                    <div class="eyes">
+                        <div class="eye left-eye"></div>
+                        <div class="eye right-eye"></div>
+                    </div>
+                    <div class="ears">
+                        <div class="left-ear ear">
+                            <div class="inner-ear"></div>
+                        </div>
+                    </div>
+                        <div class="right-ear ear">
+                            <div class="inner-ear"></div>
+                        </div>
+                    </div>
+                    <div class="bear-mouth">
+                        <div class="bear-nose"></div>
+                    </div>
+                </div>
+
+                    <div class="bear-torso">
+                        <div class="left-arm">
+                            <div class="left-paw"></div>
+                        </div>
+                        <div class="underbelly"></div>
+                        <div class="underbelly-foot"></div>
+                        <div class="right-arm">
+                            <div class="right-paw"></div>
+                        </div>
+                        <div class="right-leg">
+                            <div class="right-leg-bottom"></div>
+                        </div>
+                    </div>
+             </div>
+
+
+
+        <p> AAAAHHHHHHHH you see a bear and if you dont act fast you will die would you like to <a href="chose_slowlywalkaway.html">slowly walk away</a> or use your resources and <a href="chose_hitit.html">hit it</a></p>
+
+    <style>
+
+        body {
+            padding: 0;
+            margin: 0;
+            background: #f2f2f2;
+        }
+
+        .moped-bear-container {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        .moped-bear {
+            position: relative;
+            height: 300px;
+            width: 242px;
+            margin: auto;
+            top: 20vh;
+        }
+
+        .bear {
+            position: absolute;
+            height: 216px;
+            width: 150px;
+            left: 26px;
+            z-index: 12;
+            animation: bearJamp $mopedDuration infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes bearjump {
+            0% {
+                top: 0;
+            }
+            50% {
+                top: 20px;
+            }
+            100% {
+                top: 0;
+            }
+        }
+
+        .bear-head {
+            position: absolute;
+            height: 138px;
+            width: 103px;
+            background: #dbd3c0;
+            right: 8px;
+            border-top-left-radius: 500px;
+            border-top-right-radius: 500px;
+            z-index: 2;
+        }
+
+        .bear-mouth {
+            position: absolute;
+            right: -11px;
+            top: 29px;
+            height: 37px;
+            width: 44px;
+            background: #bcb096;
+            border-top-left-radius: 500px;
+            border-top-right-radius: 500px;
+            border-bottom-right-radius: 500px;
+            border-bottom-left-radius: 500px;
+        }
+
+        .bear-nose {
+            position: absolute;
+            top: 5px;
+            height: 10px;
+            width: 16px;
+            background: #333333;
+            right: -1px;
+            border-radius: 500px;
+        }
+
+        .eyes {
+            position: absolute;
+            height: 24px;
+            width: 36px;
+            right: 6px;
+            top: 6px;
+        }
+
+        .eye {
+            position: absolute;
+            height: 9px;
+            width: 5px;
+            background: #333333;
+            border-radius: 10px;
+            top: 10px;
+            animation: eyeClose 0.2s infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes eyeClose {
+            0% {
+                height: 9px;
+            }
+            25% {
+                height: 9px;
+            }
+            45% {
+                height: 9px;
+                top: 10px;
+            }
+            50% {
+                height: 0px;
+                top: 13px;
+            }
+            55% {
+                height: 9px;
+                top: 10px;
+            }
+            75% {
+            }
+            100% {
+                height: 9px;
+            }
+        }
+
+        .right-eye {
+            left: 19px;
+        }
+
+        .left-eye {
+            left: 7px;
+        }
+
+        .ears {
+            height: 19px;
+            width: 50px;
+            position: absolute;
+            top: -4px;
+            left: 8px;
+            transform: rotate(-22deg);
+        }
+
+        .ear {
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            border-radius: 100%;
+            background: #dbd3c0;
+        }
+
+        .left-ear {
+            top: -5px;
+            left: 7px;
+        }
+
+        .right-ear {
+            top: -5px;
+            left: 29px;
+        }
+        
+        .inner-ear {
+            position: absolute;
+            height: 5px;
+            width: 5px;
+            border-radius: 100%;
+            background: #dbd096;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .bear-torso {
+            position: absolute;
+            height: 112px;
+            width: 118px;
+            background: #dbd3c0;
+            bottom: 0;
+            left: 11px;
+            border-top-left-radius: 100%;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+            animation: torsoJump $mopeDuration infinite;
+            animation-timing-function: linear;
+          }
+
+          @keyframes torsoJump {
+            0% {
+                bottom: 4px;
+            }
+            50% {
+                bottom: 0;
+            }
+            100% {
+                bottom: 4px
+            }
+          }
+
+          .left-arm {
+            position: absolute;
+            height: 41px;
+            width: 89px;
+            background: #bcb096;
+            height: -50px;
+            top: 21px;
+            border-bottom-right-radius: 500px;
+            border-top-right-radius: 500px;
+            border-bottom-left-radius: 500px;
+          }
+
+          .right-arm {
+            position: absolute;
+            height: 43px;
+            width: 109px;
+            background: #dbd3c0;
+            right: -43px;
+            top: 25px;
+            transform: rotate(198deg) skew(30deg) perspective(0px) rotateX('21deg');
+            border-bottom-right-radius: 116%;
+            border-bottom-left-radius: 37px;
+            border-top-right-radius: 83%;
+            border-top-left-radius: 169%;
+            z-index: 99;
+          }
+
+          .right-paw {
+            position: absolute;
+            height: 40px;
+            width: 50px;
+            left: -3px;
+            top: 7px;
+            background: #dbd3c0;
+            transform: skew(-22deg) rotate(-23deg);
+            border-bottom-right-radius: 57px;
+            border-bottom-left-radius: 86px;
+            border-top-left-radius: 96px;
+            border-top-right-radius: 95px;
+          }
+
+          .right-leg {
+            position: absolute;
+            height: 38px;
+            width: 85px;
+            background: #dbd2c0;
+            bottom: 1px;
+            right: -7px;
+            transform: rotate(0deg) skew(38deg);
+            border-top-right-radius: 120px;
+            border-top-left-radius: 120px;
+            z-index: 13;
+          }
+
+          .right-leg-bottom {
+            position: absolute;
+            height: 49px;
+            width: 50px;
+            background: #dbd3c0;
+            right: 2px;
+            top: 3px;
+            transform: rotate(-26deg) skew(-13deg);
+            border-top-right-radius: 176px;
+            border-top-left-radius: 60px;
+          }
+
+          .underbelly {
+            position: absolute;
+            right: 0;
+            height: 86px;
+            width: 55px;
+            background: #c7bb9e;
+            bottom: 0%;
+            border-bottom-right-radius: 118px;
+          }
+
+          .underbelly-foot {
+            position: absolute;
+            right: -11px;
+            height: 60px;
+            width: 24px;
+            background: #c7bb9e;
+            top: 57px;
+            transform: rotate(-50deg) skew(0deg);
+          }
+
+        body {
+            font-size: 20px;
+            background-color: gray;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</body>
+</html>
