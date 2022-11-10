@@ -5,11 +5,77 @@
     <title> Epic Adventure</title>
 </head>
 <body>
+    <div class="phone">
+    <span class="material-icons">
+        Call
+    </span>
+</div>
+<div class="circle"></div>
+<div class="circle2"></div>
 
 
         <p> Would you like to <a href="chose_callsomeone.html">Call someone</a> or <a href="chose_keepgoing.html">Keep going</a> and try to find your way out?</p>
 
     <style>
+
+        :root {
+            --pink: #f5005f;
+            --animation-curve: cubic-bezier(0.12, 0.7, 0.74, 0.7);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin-left: 50%;
+            margin-top: 15em;
+            height: 100vh;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .phone {
+            z-index: 2;
+            background-color: var(--pink);
+            animation: PHONE 1S var(--animation-curve) infinite alternate-reverse;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            border: 0.5PX white solid;
+        }
+
+        .materialicons {
+            color: white;
+        }
+
+        div {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            animation: scaling 2s var(--animation-curve) infinite;
+        }
+
+        @keyframes scaling {
+            0% {
+                transform: scale(4);
+                background-color: var(--pink);
+            }
+            100% {
+                transform: scale(4.5);
+            }
+        }
+
+        .circle1 {
+            animation-delay: 0s;
+        }
+        
+        .circle2 {
+            animation-delay: 1s;
+        }
 
         body {
             font-size: 20px;
